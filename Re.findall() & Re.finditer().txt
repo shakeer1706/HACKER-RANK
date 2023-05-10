@@ -1,0 +1,5 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+result = re.findall(r'(?<=[^aeiou])[aeiou]{2,}(?=[^aeiou])', input(), flags=re.I)
+print("\n".join(result) if result else "-1")
